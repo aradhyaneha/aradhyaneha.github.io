@@ -26,14 +26,14 @@ const data = [
     category: "",
     title: "",
     src: "/portfolio-cover.jpg",
-    content: <iframe allowFullScreen="allowfullscreen" scrolling="no" className="fp-iframe" src="https://heyzine.com/flip-book/9b931e5eb2.html" 
+    content: <iframe allowFullScreen={true} scrolling="no" className="fp-iframe" src="https://heyzine.com/flip-book/9b931e5eb2.html" 
     style={{"border": "0px", "width": "100%", "height": "600px"}}></iframe>,
   },
   {
     category: "Resume",
     title: "One Pager",
     src: "/resume-cover.jpg",
-    content: <iframe allowFullScreen="allowfullscreen" scrolling="no" className="fp-iframe" 
+    content: <iframe allowFullScreen={true} scrolling="no" className="fp-iframe" 
     style={{"border": "0px", "width": "100%", "height": "600px"}} src="https://heyzine.com/flip-book/46c037e875.html"></iframe>,
   },
   {
