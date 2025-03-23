@@ -9,17 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "framer-motion": "^12.0.0-alpha.1",
-    "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "tailwind-merge": "^2.5.5"
-  },
-  "overrides": {
-    "framer-motion": {
-      "react": "19.0.0-rc-66855b96-20241106",
-      "react-dom": "19.0.0-rc-66855b96-20241106"
-    }
+    "@tabler/icons-react": "^3.31.0",
+    "clsx": "^2.1.1",
+    "motion": "^12.5.0",
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
