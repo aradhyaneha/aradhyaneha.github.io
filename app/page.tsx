@@ -25,7 +25,7 @@ export default function AppleCardsCarouselDemo() {
 						borderRadius: "15%",
 						maxWidth: "25%",
 					}}
-					alt="Neha Aradhya logo"
+					alt="Neha Aradhya"
 					priority={false}
 				/>
 				<div>
@@ -48,6 +48,7 @@ const data = [
 		category: "Portfolio",
 		title: "",
 		src: "/portfolio-cover.jpg",
+		src_mobile: "/portfolio-cover-mobile.jpg",
 		content: (
 			<iframe
 				allowFullScreen={true}
@@ -62,6 +63,7 @@ const data = [
 		category: "Resume",
 		title: "",
 		src: "/resume-cover.jpg",
+		src_mobile: "/resume-cover-mobile.jpg",
 		content: (
 			<iframe
 				allowFullScreen={true}
@@ -76,6 +78,7 @@ const data = [
 		category: "Contact Details",
 		title: "",
 		src: "/contact.jpg",
+		src_mobile: "/contact.jpg",
 		content: <ContactCard />,
 	},
 ];

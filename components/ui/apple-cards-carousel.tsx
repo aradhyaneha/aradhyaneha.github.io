@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface CarouselProps {
 	items: JSX.Element[];
@@ -27,6 +28,7 @@ type Card = {
 	title: string;
 	category: string;
 	content: React.ReactNode;
+	src_mobile: string;
 };
 
 export const CarouselContext = createContext<{
@@ -167,6 +169,7 @@ export const Card = ({
 	const [open, setOpen] = useState(false);
 	const containerRef = useRef<HTMLDivElement>(null);
 	const { onCardClose } = useContext(CarouselContext);
+	const isMobile = useIsMobile();
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
@@ -269,7 +272,7 @@ export const Card = ({
 					</motion.p>
 				</div>
 				<BlurImage
-					src={card.src}
+					src={isMobile ? card.src_mobile : card.src}
 					alt={card.title}
 					fill
 					className={`object-cover absolute z-10 inset-0 r-0`}
