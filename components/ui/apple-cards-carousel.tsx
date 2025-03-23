@@ -251,7 +251,7 @@ export const Card = ({
 							</motion.p>
 							{loading && (
 								<div className="flex flex-col items-center">
-									<p className="absolute w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></p>
+									<p className="absolute w-12 h-12 border-4 border-background border-t-current rounded-full animate-spin"></p>
 								</div>
 							)}
 							<div className="py-10">
