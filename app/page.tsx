@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+// import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { ContactCard as ContactCard } from "@/components/ui/contact-card";
 import Image from "next/image";
 
