@@ -272,7 +272,7 @@ export const Card = ({
 					src={card.src}
 					alt={card.title}
 					fill
-					className={`object-cover absolute 'z-3' inset-0 r-0`}
+					className={`object-cover absolute z-10 inset-0 r-0`}
 					style={{ right: 0 }}
 				/>
 			</motion.button>

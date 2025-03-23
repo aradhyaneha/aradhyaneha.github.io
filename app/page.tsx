@@ -11,29 +11,30 @@ export default function AppleCardsCarouselDemo() {
 	));
 
 	return (
-		<div className="w-full h-full py-20">
-			<div className="max-w-7xl pl-4 mx-auto flex px-auto">
+		<div className="w-full py-20">
+			<div className="max-w-7xl pl-4 mx-auto flex">
 				<Image
-					src={"/na_logo.png"}
-					width="100"
-					height="100"
-					sizes="(max-width: 768px) 10rem, 10rem"
+					src={"/neha.png"}
+					width="150"
+					height="150"
 					style={{
 						objectFit: "contain",
 						backgroundColor: "white",
 						color: "white",
 						height: "fit-content",
+						borderRadius: "15%",
+						maxWidth: "25%",
 					}}
 					alt="Neha Aradhya logo"
 					priority={false}
 				/>
 				<div>
-					<h2 className="max-w-7xl pl-4 mx-auto text-5xl max-md:text-4xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+					<h2 className="pl-8 max-md:pl-4 mx-auto text-5xl max-md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
 						{/* <TextGenerateEffect words="Neha Aradhya"/> */}
 						Neha Aradhya
 					</h2>
-					<h3 className="max-w-7xl pl-4 my-2 max-md:my-0.5 mx-auto text-2xl max-md:text-xl font-semibold text-neutral-700 dark:text-neutral-300 font-sans">
-						Architect and Interior Designer.
+					<h3 className="pl-8 max-md:pl-4 my-4 max-md:my-2 mx-auto text-3xl leading-4 max-md:text-lg font-semibold text-neutral-500 dark:text-neutral-500 font-sans">
+						Architect | Interior Designer
 					</h3>
 				</div>
 			</div>
