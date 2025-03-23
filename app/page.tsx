@@ -49,13 +49,15 @@ const data = [
 		title: "",
 		src: "/portfolio-cover.jpg",
 		src_mobile: "/portfolio-cover-mobile.jpg",
-		content: (
+		loader: true,
+		content: (onLoad: Function) => (
 			<iframe
 				allowFullScreen={true}
 				scrolling="no"
 				className="fp-iframe"
 				src="https://heyzine.com/flip-book/9b931e5eb2.html"
-				style={{ border: "0px", width: "100%", height: "600px" }}
+				style={{ border: "0px", width: "100%", height: "55vh" }}
+				onLoad={() => onLoad()}
 			></iframe>
 		),
 	},
@@ -64,13 +66,15 @@ const data = [
 		title: "",
 		src: "/resume-cover.jpg",
 		src_mobile: "/resume-cover-mobile.jpg",
-		content: (
+		loader: true,
+		content: (onLoad: Function) => (
 			<iframe
 				allowFullScreen={true}
 				scrolling="no"
 				className="fp-iframe"
-				style={{ border: "0px", width: "100%", height: "600px" }}
+				style={{ border: "0px", width: "100%", height: "55vh" }}
 				src="https://heyzine.com/flip-book/46c037e875.html"
+				onLoad={() => onLoad()}
 			></iframe>
 		),
 	},
@@ -79,6 +83,7 @@ const data = [
 		title: "",
 		src: "/contact.jpg",
 		src_mobile: "/contact.jpg",
-		content: <ContactCard />,
+		loader: false,
+		content: () => <ContactCard />,
 	},
 ];

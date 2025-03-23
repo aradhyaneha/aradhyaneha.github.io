@@ -27,8 +27,9 @@ type Card = {
 	src: string;
 	title: string;
 	category: string;
-	content: React.ReactNode;
+	content: (setLoading: (loading: boolean) => void) => JSX.Element;
 	src_mobile: string;
+	loader: boolean;
 };
 
 export const CarouselContext = createContext<{
@@ -170,6 +171,7 @@ export const Card = ({
 	const containerRef = useRef<HTMLDivElement>(null);
 	const { onCardClose } = useContext(CarouselContext);
 	const isMobile = useIsMobile();
+	const [loading, setLoading] = useState(card.loader);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
@@ -199,6 +201,7 @@ export const Card = ({
 	const handleClose = () => {
 		setOpen(false);
 		onCardClose(index);
+		setLoading(card.loader ? true : false);
 	};
 
 	return (
@@ -244,7 +247,14 @@ export const Card = ({
 							>
 								{card.title}
 							</motion.p>
-							<div className="py-10">{card.content}</div>
+							{loading && (
+								<div className="flex flex-col items-center">
+									<p className="absolute w-12 h-12 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></p>
+								</div>
+							)}
+							<div className="py-10">
+								{card.content(() => setLoading(false))}
+							</div>
 						</motion.div>
 					</div>
 				)}
@@ -275,7 +285,7 @@ export const Card = ({
 					src={isMobile ? card.src_mobile : card.src}
 					alt={card.title}
 					fill
-					className={`object-cover absolute z-10 inset-0 r-0`}
+					className="object-cover absolute z-10 inset-0"
 					style={{ right: 0 }}
 				/>
 			</motion.button>
