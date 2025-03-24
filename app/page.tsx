@@ -5,13 +5,13 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { ContactCard as ContactCard } from "@/components/ui/contact-card";
 import Image from "next/image";
 
-export default function AppleCardsCarouselDemo() {
+export default function NehaHomePage() {
 	const cards = data.map((card, index) => (
 		<Card key={card.src} card={card} index={index} />
 	));
 
 	return (
-		<div className="w-full py-20">
+		<div className="w-full py-20" data-nosnippet>
 			<div className="max-w-7xl pl-4 mx-auto flex">
 				<Image
 					src={"/neha.png"}
@@ -31,10 +31,10 @@ export default function AppleCardsCarouselDemo() {
 				<div>
 					<h2 className="pl-8 max-md:pl-4 mx-auto text-5xl max-md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
 						{/* <TextGenerateEffect words="Neha Aradhya"/> */}
-						Neha Aradhya
+						neha aradhya
 					</h2>
-					<h3 className="pl-8 max-md:pl-4 my-4 max-md:my-2 mx-auto text-3xl leading-4 max-md:text-lg font-semibold text-neutral-500 dark:text-neutral-500 font-sans">
-						Architect | Interior Designer
+					<h3 className="pl-8 max-md:pl-4 my-4 max-md:my-2 mx-auto text-3xl leading-4 max-md:text-lg font-semibold text-neutral-500 dark:text-neutral-400 font-sans">
+						Architect // Interior Designer
 					</h3>
 				</div>
 			</div>
@@ -73,7 +73,7 @@ const data = [
 				scrolling="no"
 				className="fp-iframe"
 				style={{ border: "0px", width: "100%", height: "55vh" }}
-				src="https://heyzine.com/flip-book/46c037e875.html"
+				src="https://heyzine.com/flip-book/cebc3688c0.html"
 				onLoad={() => setLoading(false)}
 			></iframe>
 		),

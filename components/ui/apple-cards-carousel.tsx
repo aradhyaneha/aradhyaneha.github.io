@@ -237,7 +237,7 @@ export const Card = ({
 										? `category-${card.title}`
 										: undefined
 								}
-								className="text-base font-bold text-black dark:text-white"
+								className="text-base font-bold text-black dark:text-white font-(family-name:--font-poppins-sans)"
 							>
 								{card.category}
 							</motion.p>
@@ -272,7 +272,7 @@ export const Card = ({
 						layoutId={
 							layout ? `category-${card.category}` : undefined
 						}
-						className="text-white text-sm md:text-base font-medium font-sans text-left"
+						className="text-white text-sm md:text-base font-bold text-left font-(family-name:--font-poppins-sans)"
 					>
 						{card.category}
 					</motion.p>
@@ -285,9 +285,9 @@ export const Card = ({
 				</div>
 				<BlurImage
 					src={isMobile ? card.src_mobile : card.src}
-					alt={card.title}
+					alt={card.category}
 					fill
-					className="object-cover absolute z-10 inset-0"
+					className="object-cover absolute z-10 inset-0 font-(family-name:--font-poppins-sans)"
 					style={{ right: 0 }}
 				/>
 			</motion.button>

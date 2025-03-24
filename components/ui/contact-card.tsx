@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export function ContactCard() {
 	return (
-		<Card>
+		<Card className="font-(family-name:--font-poppins-sans)">
 			<CardSkeletonContainer showGradient={false}>
 				<Skeleton />
 			</CardSkeletonContainer>
@@ -36,7 +36,7 @@ const Skeleton = () => {
 							fill="currentColor"
 						/>
 					</svg>
-					linkedin.com/in/neha-aradhya
+					linkedin/neha-aradhya
 				</a>
 				<a
 					href="mailto:aradhyaneha@gmail.com"
