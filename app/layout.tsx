@@ -19,9 +19,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: "neha aradhya",
+	title: "Neha Aradhya",
 	description:
-		"Official website of Neha Aradhya. Licensed Architect and Interior Designer from India 🇮🇳.",
+		"Official website of Neha Aradhya. Licensed Architect and Interior Designer from India.",
 };
 
 export default function RootLayout({

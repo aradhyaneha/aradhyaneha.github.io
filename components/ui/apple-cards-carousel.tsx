@@ -95,7 +95,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 		<CarouselContext.Provider
 			value={{ onCardClose: handleCardClose, currentIndex }}
 		>
-			<div className="relative w-full">
+			<div className="relative w-full" data-nosnippet>
 				<div
 					className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
 					ref={carouselRef}
@@ -237,7 +237,7 @@ export const Card = ({
 										? `category-${card.title}`
 										: undefined
 								}
-								className="text-base font-bold text-black dark:text-white font-(family-name:--font-poppins-sans)"
+								className="text-xl md:text-2xl font-bold text-black dark:text-white font-(family-name:--font-poppins-sans)"
 							>
 								{card.category}
 							</motion.p>

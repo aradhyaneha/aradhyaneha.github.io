@@ -11,7 +11,7 @@ export default function NehaHomePage() {
 	));
 
 	return (
-		<div className="w-full py-20" data-nosnippet>
+		<div className="w-full py-20">
 			<div className="max-w-7xl pl-4 mx-auto flex">
 				<Image
 					src={"/neha.png"}
@@ -25,8 +25,8 @@ export default function NehaHomePage() {
 						borderRadius: "15%",
 						maxWidth: "25%",
 					}}
-					alt="Neha Aradhya"
-					priority={false}
+					alt="Picture of Neha Aradhya"
+					priority={true}
 				/>
 				<div>
 					<h2 className="pl-8 max-md:pl-4 mx-auto text-5xl max-md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
@@ -73,7 +73,7 @@ const data = [
 				scrolling="no"
 				className="fp-iframe"
 				style={{ border: "0px", width: "100%", height: "55vh" }}
-				src="https://heyzine.com/flip-book/cebc3688c0.html"
+				src="https://heyzine.com/flip-book/d1469d1516.html"
 				onLoad={() => setLoading(false)}
 			></iframe>
 		),
