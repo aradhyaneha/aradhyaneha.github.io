@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Arimo, Poppins, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Arimo({
-	variable: "--font-arimo-sans",
+const poppinsSans = Poppins({
+	variable: "--font-poppins-sans",
+	subsets: ["latin"],
+	weight: "500",
+});
+
+const robotoSans = Roboto({
+	variable: "--font-roboto-sans",
 	subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
 	subsets: ["latin"],
-});
-
-const poppins = Poppins({
-	variable: "--font-poppins-sans",
-	subsets: ["latin"],
-	weight: "300",
 });
 
 export const metadata: Metadata = {
@@ -30,12 +30,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
-			>
-				{children}
-			</body>
+		<html
+			className={`${poppinsSans.variable} ${geistMono.variable} ${robotoSans.variable}`}
+			lang="en"
+		>
+			<body className={`font-sans antialiased`}>{children}</body>
 		</html>
 	);
 }
