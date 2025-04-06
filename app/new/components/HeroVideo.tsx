@@ -2,9 +2,11 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Loading from "../loading";
+import { useAutoPlayVideo } from "@/hooks/use-auto-play-video";
 
 export default function HeroVideo() {
 	const [assetsLoaded, setAssetsLoaded] = useState(false);
+	const videoRef = useAutoPlayVideo();
 
 	useEffect(() => {
 		const handleAssetsLoaded = () => setAssetsLoaded(true);
@@ -37,15 +39,17 @@ export default function HeroVideo() {
 
 			{/* Main content */}
 			<motion.video
+				ref={videoRef}
 				initial={{ opacity: 0 }}
 				animate={{ opacity: assetsLoaded ? 1 : 0 }}
-				transition={{ duration: 0.8, delay: assetsLoaded ? 0.2 : 0 }}
+				transition={{ duration: 0.8, delay: 0.2 }}
 				src="/hero-video.mp4"
 				autoPlay
 				loop
 				muted
 				playsInline
-				className="h-auto z-0 object-cover "
+				preload="auto"
+				className="h-auto z-0 object-cover"
 				onContextMenu={(e) => e.preventDefault()}
 			></motion.video>
 		</>

@@ -18,6 +18,8 @@ export async function POST(req: Request) {
       `,
     })
 
+    console.log("Resend API call: ", data)
+
     return NextResponse.json({ message: 'Your letter has been sent!' })
   } catch (error) {
     console.error(error)

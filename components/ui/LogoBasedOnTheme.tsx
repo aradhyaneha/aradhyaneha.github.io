@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { useDarkMode } from "@/hooks/use-dark-mode";
+// import { useDarkMode } from "@/hooks/use-dark-mode";
 import Image from "next/image";
 
 const LogoBasedOnTheme = () => {
-	const isDarkMode = useDarkMode();
+	// const isDarkMode = useDarkMode();
 	// const logoSrc = isDarkMode ? "/na_logo_dark.png" : "/na_logo_new.png";
 	const logoSrc = "/na_logo_new.png";
 	return (
