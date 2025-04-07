@@ -18,12 +18,12 @@ body {
   color: var(--foreground);
 }
 
-
 .loading-gif {
   background-image: url('/light_small.gif');
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--color-background);
+  background-size: 5%;
 }
 
 @layer utilities {
@@ -72,4 +72,12 @@ body {
   /* .loading-gif {
     background-image: url('/dark_small.gif')
   } */
+}
+
+.sketch-house {
+  background-image: url('/about-me/house-sketch.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-background);
+  z-index: 1;
 }

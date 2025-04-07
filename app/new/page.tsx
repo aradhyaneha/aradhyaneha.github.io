@@ -10,7 +10,7 @@ import RotatePageToView from "./components/RotatePageToView";
 export default async function page() {
 	await delay(2000);
 	return (
-		<div className="w-full">
+		<div className="w-full h-full">
 			<RotatePageToView />
 			<HeroSection />
 			<WorksSection />

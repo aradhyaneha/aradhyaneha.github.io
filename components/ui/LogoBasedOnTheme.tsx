@@ -9,11 +9,11 @@ const LogoBasedOnTheme = () => {
 	const logoSrc = "/na_logo_new.png";
 	return (
 		<Image
-			className={"footer-logo max-xl:scale-70"}
+			className={"max-xl:scale-70"}
 			alt="Neha Aradhya logo"
 			src={logoSrc}
-			width="50"
-			height="50"
+			width="40"
+			height="40"
 		/>
 	);
 };

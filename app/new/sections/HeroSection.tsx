@@ -1,5 +1,6 @@
 import React from "react";
 import HeroVideo from "../components/HeroVideo";
+import Link from "next/link";
 
 const HeroSection = () => {
 	return (
@@ -12,9 +13,9 @@ const HeroSection = () => {
 					<a href="#works" className="font-poppins">
 						/ my works
 					</a>
-					<a href="#portfolio" className="font-poppins">
+					<Link href="/portfolio" className="font-poppins">
 						/ my portfolio
-					</a>
+					</Link>
 					<a href="#aboutme" className="font-poppins">
 						/ about me
 					</a>

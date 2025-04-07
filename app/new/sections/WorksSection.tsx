@@ -5,10 +5,10 @@ const WorksSection = () => {
 	return (
 		<div
 			id={"works"}
-			className="flex flex-col items-start max-w-full h-dvh"
+			className="flex flex-col items-start max-w-full h-lvh"
 		>
 			<div>
-				<h2 className="text-5xl max-xl:text-3xl max-lg:text-2xl font-bold text-[#5b0000] italic pl-28 pt-28 max-lg:pt-8 max-lg:pl-8 max-xl:pl-15 max-xl:pt-15">
+				<h2 className="text-4xl max-xl:text-3xl max-lg:text-2xl font-bold text-[#5b0000] italic pl-28 pt-28 max-lg:pt-8 max-lg:pl-8 max-xl:pl-15 max-xl:pt-15">
 					/ my <span className="font-bold">WORKS</span>
 				</h2>
 			</div>
@@ -41,7 +41,7 @@ const WorksSection = () => {
 
 				{/* Art */}
 				<div>
-					<div className="relative inline-block p-4 -translate-x-60 max-xl:-translate-x-45 max-lg:-translate-x-25">
+					<div className="relative inline-block p-4 -translate-x-50 max-xl:-translate-x-35 max-lg:-translate-x-20">
 						<Image
 							src="/work-section/art.png"
 							alt="Art"
