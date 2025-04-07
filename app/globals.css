@@ -22,7 +22,7 @@ body {
   background-image: url('/light_small.gif');
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--color-background);
+  background-color: "#fcfcfc";
   background-size: 5%;
 }
 

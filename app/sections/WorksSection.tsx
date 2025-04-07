@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const WorksSection = () => {
 	return (
@@ -14,7 +15,7 @@ const WorksSection = () => {
 			</div>
 			<div className="flex justify-center mx-auto p-5 pl-45 max-lg:p-4 max-xl:pl-30 mt-30 max-xl:mt-10 max-lg:mt-0">
 				{/* Architecture & Interiors */}
-				<div>
+				<Link href="/architecture">
 					<div className="relative inline-block p-4 -rotate-6 translate-x-5 max-xl:translate-x-10 max-xl:scale-95">
 						<Image
 							src="/work-section/architecture.png"
@@ -24,10 +25,10 @@ const WorksSection = () => {
 							className="object-cover"
 						/>
 					</div>
-				</div>
+				</Link>
 
 				{/* Photography */}
-				<div>
+				<Link href="/photography">
 					<div className="relative inline-block p-4 translate-y-22 max-xl:translate-y-18 max-lg:translate-y-10">
 						<Image
 							src="/work-section/photography.png"
@@ -37,10 +38,10 @@ const WorksSection = () => {
 							className="object-cover"
 						/>
 					</div>
-				</div>
+				</Link>
 
 				{/* Art */}
-				<div>
+				<Link href="/art">
 					<div className="relative inline-block p-4 -translate-x-50 max-xl:-translate-x-35 max-lg:-translate-x-20">
 						<Image
 							src="/work-section/art.png"
@@ -50,7 +51,7 @@ const WorksSection = () => {
 							className="object-cover"
 						/>
 					</div>
-				</div>
+				</Link>
 			</div>
 		</div>
 	);

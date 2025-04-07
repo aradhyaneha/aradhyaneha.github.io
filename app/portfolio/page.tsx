@@ -3,8 +3,7 @@ import { IconX } from "@tabler/icons-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
-import RotatePageToPortraitToView from "../new/components/RotatePageToPortraitToView";
-import RotatePageToView from "../new/components/RotatePageToView";
+import RotatePageToView from "../components/RotatePageToView";
 
 const PortfolioPage = () => {
 	const [loading, setLoading] = useState(true);
@@ -20,7 +19,7 @@ const PortfolioPage = () => {
 			>
 				<Link
 					className="absolute top-4 left-10 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
-					href={"/new"}
+					href={"/"}
 				>
 					<IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
 				</Link>

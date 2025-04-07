@@ -37,10 +37,7 @@ const AboutMe = () => {
 							className="object-contain"
 						/>
 					</div>
-					<div className="absolute max-md:pl-4 bottom-10 max-xl:bottom-7 max-lg:bottom-8 max-md:-bottom-10 rotate-357 -translate-x-2/10 max-lg:-translate-x-1/10 flex flex-col gap-8 max-lg:gap-6 justify-between max-w-3/12">
-						{/* <div className="flex flex-col self-start w-1/8">
-
-						</div> */}
+					<div className="absolute max-md:pl-4 bottom-10 max-xl:bottom-7 rotate-357 -translate-x-2/10 max-lg:-translate-x-1/10 flex flex-col gap-8 max-lg:gap-6 justify-between max-w-3/12">
 						<div className="flex flex-row gap-5 text-2xl max-xl:text-xl text-gray-400">
 							<a
 								href="https://www.linkedin.com/in/neha-aradhya/"
@@ -57,7 +54,7 @@ const AboutMe = () => {
 								<FaEnvelope />{" "}
 							</a>
 						</div>
-						<div className="flex flex-col text-xl max-xl:text-sm">
+						<div className="flex flex-col text-xl max-xl:text-sm max-lg:text-xs	">
 							<div className="flex flex-col gap-5 max-lg:gap-3 text-gray-500">
 								<Link
 									href="/portfolio"
