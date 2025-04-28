@@ -26,7 +26,7 @@ export default function HeroVideo() {
 				{!assetsLoaded && (
 					<motion.div
 						key="loader"
-						className="fixed inset-0 z-50 flex items-center justify-center max-w-vw"
+						className="fixed inset-0 z-1000 flex items-center justify-center max-w-vw"
 						initial={{ opacity: 1 }}
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}

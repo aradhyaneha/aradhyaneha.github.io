@@ -25,7 +25,7 @@ const PortfolioPage = () => {
 				</Link>
 				{loading && (
 					<div className="flex flex-col items-center">
-						<p className="absolute w-12 h-12 border-4 border-background border-t-current rounded-full animate-spin"></p>
+						<p className="absolute mt-40 w-12 h-12 border-4 border-background border-t-current rounded-full animate-spin"></p>
 					</div>
 				)}
 				<div className="py-5">
